@@ -4,6 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 import model
 
+
 data = pd.read_csv("testData.csv", header=None, sep='\t')
 
 

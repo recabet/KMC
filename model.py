@@ -117,7 +117,7 @@ class my_KMC:
         if self.k <= 0:
             raise ValueError("The model is incorrectly set up (k must be non-negative).")
         
-        error_history = []
+        error_history:list = list()
         for i in range(1, max_k + 1):
             self.k = i
             self.fit(X)
